@@ -70,7 +70,7 @@
 
         const tooltip = d3.select("#tooltip");
 
-        d3.csv("http://raw.githubusercontent.com/kar9346/assignment-2/refs/heads/main/data_sample(1).csv").then(data => {
+        d3.csv("https://raw.githubusercontent.com/kar9346/assignment2/refs/heads/main/data_sample.csv").then(data => {
             data.forEach(d => {
                 d.date = parseDate(d.date);
                 d.EstimatedCost = +d.EstimatedCost;
